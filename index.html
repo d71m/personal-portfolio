@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <div id="starry-background"></div>
+    <nav id="desktop-nav">
+      <div class="logo">Abdulrahman Altayari</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about-me">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <button id="theme-toggle" aria-label="Toggle Light/Dark Mode" style="background:none; border:none; cursor:pointer; font-size:1.2rem; color: var(--text-color);">
+              🌓
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+<nav id="hamburger-nav">
+      <div class="logo">Abdulrahman Altayari</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about-me" onclick="toggleMenu()">About</a></li>
+          <li><a href="#resume" onclick="toggleMenu()">My cv</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li>
+            <button id="theme-toggle-mobile" aria-label="Toggle Light/Dark Mode" style="background:none; border:none; cursor:pointer; font-size:1.2rem; color: var(--text-color);" onclick="toggleMenu()">
+              🌓
+            </button>
+          </li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="abdulrahman profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Abdulrahman Altayari</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Abdulrahman_Altayari_CV.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https:www.linkedin.com/in/abdulrahman-altayari'"
+
+           
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https:/github.com/d71m'"
+          />
+        </div>
+      </div>
+    </section>
+<section id="about-me">
+      <div class="about-me-container">
+        <h1 class="about-me-title">About Me</h1>
+        <div class="about-me-content">
+          <p>Detail-oriented IT graduate from the University of Jeddah with a GPA of 4.65 and hands-on experience in technical support from an internship at Coastline LLC. Skilled in troubleshooting hardware, software, and network issues, with a strong commitment to cybersecurity and data protection practices.</p>
+        </div>
+      </div>
+        <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#resume'"
+      />
+    </section>
+    
+    <section id="resume">
+      <p class="section__text__p1">Detail-oriented IT graduate with hands-on technical experience</p>
+      <h1 class="title">Resume</h1>
+      <div class="resume-container">
+        <div class="resume-column">
+          <h2 class="resume-sub-title">Education</h2>
+          <div class="resume-item">
+            <div class="resume-item-header">
+              <h3>BSc Information Technology</h3>
+              <span>June 2020 - Jan 2025</span>
+            </div>
+            <p><em>University of Jeddah, Saudi Arabia</em></p>
+            <ul>
+              <li>GPA: 4.65 / 5 (Ranked 1st in class)</li>
+              <li>Received the Excellence Certificate Award three times</li>
+            </ul>
+          </div>
+          <h2 class="resume-sub-title">Courses</h2>
+          <div class="resume-item">
+            <div class="resume-item-header">
+              <h3>Misk Foundation</h3>
+              <span>Jan 2025</span>
+            </div>
+            <p>Data Analysis</p>
+          </div>
+          <div class="resume-item">
+            <div class="resume-item-header">
+              <h3>Doroob</h3>
+              <span>Jan 2025</span>
+            </div>
+            <p>Microsoft Excel</p>
+          </div>
+          <div class="resume-item">
+            <div class="resume-item-header">
+              <h3>IBM</h3>
+              <span>Jan 2023</span>
+            </div>
+            <p>Introduction to Networking and Storage</p>
+          </div>
+          <h2 class="resume-sub-title">Achievements</h2>
+          <ul>
+            <li>Excellence Certificate Award received three times during university studies</li>
+            <li>Ranked 1st in class with GPA 4.65 / 5</li>
+          </ul>
+          <h2 class="resume-sub-title">Languages</h2>
+          <ul>
+            <li><strong>Arabic:</strong> Native speaker</li>
+            <li><strong>English:</strong> Highly proficient in speaking and writing</li>
+          </ul>
+        </div>
+        <div class="resume-column">
+          <h2 class="resume-sub-title">Experience</h2>
+          <div class="resume-item">
+            <div class="resume-item-header">
+              <h3>IT Intern</h3>
+              <span>July 2024 - Aug 2024</span>
+            </div>
+            <p><em>Coastline LLC</em></p>
+            <ul>
+              <li>Assisted in troubleshooting hardware and software issues</li>
+              <li>Supported network maintenance and IT security operations</li>
+              <li>Strengthened communication and technical problem-solving skills</li>
+            </ul>
+          </div>
+          <h2 class="resume-sub-title">Skills</h2>
+          <ul>
+            <li><strong>Technical Support:</strong> Experience in resolving IT issues</li>
+            <li><strong>Networking:</strong> Practical experience in network setup</li>
+            <li><strong>Troubleshooting:</strong> Skilled in diagnosing hardware/software problems</li>
+            <li><strong>Documentation:</strong> Proficient in documenting technical solutions</li>
+            <li><strong>System Configuration:</strong> Experience in setting up IT equipment</li>
+            <li><strong>Cybersecurity:</strong> Knowledge of data protection practices</li>
+            <li><strong>SQL:</strong> Skilled in database management</li>
+            <li><strong>Communication:</strong> Strong interpersonal skills</li>
+          </ul>
+        </div>
+      </div>
+      <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='#projects'"
+    />
+    </section>
+    
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">abdulrahman.at515@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/abdulrahman-altayari">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about-me">About</a></li>
+            <li><a href="#resume">My cv</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Abdulrahman Altayari. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
